@@ -29,7 +29,7 @@ var processFile=function(fn){
 	}
 	return "{"+out.join(",")+"}";   
 }
-glob("cw-data/**/*.html",function(err,files){
+glob("cw-data/**/*.html",function(err,files){ //在命令提示字元打 npm install glob
 	var arr=files.map(processFile);
 	var output="var idioms=["+arr.join(",\n")+"]"
 	console.log(output);
