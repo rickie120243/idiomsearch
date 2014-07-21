@@ -4,16 +4,15 @@
 <script src="data.js"></script>
 <script src="search.js"></script>
 <script src="ui.js"></script>
-<style>
-	.hit{color:red;}
-</style>
 
 <body>
 <input id="tofind" value="不"></input>
-<a href="#" onclick="dosearch(this.innerHTML)">花</a>
+<button onclick="dosearch(tofind.value)">Key Search</button>
 <a href="#" onclick="dosearch2(this.innerHTML)">[鼠牛虎兔龍蛇馬羊猴雞狗豬]</a>
-<button onclick="dosearch(tofind.value)">Search</button>
-<button onclick="doexplainsearch()">Explain Search</button>
+<a href="#" onclick="dosearchOOXX(this.innerHTML)">OOXX</a>
+<a href="#" onclick="dosearchOXOX(this.innerHTML)">OXOX</a><br>
+<input id="tofinddef" value="莊子"></input>
+<button onclick="dodefsearch(tofinddef.value)">Def Search</button>
 <div id="result"></div>
 </body>
 </head>
